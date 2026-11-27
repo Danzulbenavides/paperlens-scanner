@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Icon from '../layout/Icon.jsx'
+import Icon from './Icon.jsx'
 
 export default function ScannerStage({ image, corners, onCornersChange, outputUrl, busy, errorMessage, detected, onRedetect }) {
   const [dragging, setDragging] = useState(null)

@@ -1,10 +1,19 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import AppSidebar from './components/layout/AppSidebar.jsx'
-import Topbar from './components/layout/Topbar.jsx'
-import Icon from './components/layout/Icon.jsx'
-import ScannerStage from './components/scanner/ScannerStage.jsx'
-import { canvasToJpeg, createScannedCanvas, detectDocumentCorners, loadImage, resizeDataUrl } from "./imageProcessing.js";
-import { createPdfBlob } from './utils/pdf.js'
+
+import AppSidebar from './AppSidebar.jsx'
+import Topbar from './Topbar.jsx'
+import Icon from './Icon.jsx'
+import ScannerStage from './ScannerStage.jsx'
+
+import {
+  canvasToJpeg,
+  createScannedCanvas,
+  detectDocumentCorners,
+  loadImage,
+  resizeDataUrl
+} from './imageProcessing.js'
+
+import { createPdfBlob } from './pdf.js'
 
 const FILTERS = [
   { id: 'clean', label: 'Clean', description: 'Bright, crisp paper', swatch: 'swatch-clean' },

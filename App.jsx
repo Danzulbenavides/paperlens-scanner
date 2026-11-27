@@ -3,7 +3,7 @@ import AppSidebar from './components/layout/AppSidebar.jsx'
 import Topbar from './components/layout/Topbar.jsx'
 import Icon from './components/layout/Icon.jsx'
 import ScannerStage from './components/scanner/ScannerStage.jsx'
-import { canvasToJpeg, createScannedCanvas, detectDocumentCorners, loadImage, resizeDataUrl } from './utils/imageProcessing.js'
+import { canvasToJpeg, createScannedCanvas, detectDocumentCorners, loadImage, resizeDataUrl } from "./imageProcessing.js";
 import { createPdfBlob } from './utils/pdf.js'
 
 const FILTERS = [
